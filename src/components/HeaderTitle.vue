@@ -6,8 +6,8 @@
 
 <style lang="scss" scoped>
   .display-3 {
-    padding: 200px 0;
-    text-shadow: 1px 1px #666;
+    color: #f0f0f0;
+    text-shadow: 1px 2px 4px #000;
     text-transform: uppercase;
     font-weight: bold;
   }

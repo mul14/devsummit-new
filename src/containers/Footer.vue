@@ -26,9 +26,9 @@
               <dt class="mb-2">
                 Connect with us
               </dt>
-              <dd><a href="mailto:fajar@gmail.com">General Enquiries</a></dd>
-              <dd><a href="mailto:fajar@gmail.com">Speaker Submission</a></dd>
-              <dd><a href="mailto:fajar@gmail.com">Media Enquiries</a></dd>
+              <dd><a href="mailto:DevSummmit<info@devsummit.io>?subject=General Enquiries">General Enquiries</a></dd>
+              <dd><a href="mailto:DevSummmit<info@devsummit.io>?subject=Speaker Submission">Speaker Submission</a></dd>
+              <dd><a href="mailto:DevSummmit<info@devsummit.io>?subject=Media Enquiries">Media Enquiries</a></dd>
             </dl>
           </div>
           <div class="col-lg-1"></div>
@@ -42,10 +42,10 @@
               </dd>
               <dd>
                 <a href="https://play.google.com/store/apps/details?id=io.devsummit.app.android">
-                  <img src="/home/static/Playstore.png" alt="" class="img-fluid" style="width: 160px;">
+                  <img :src="require('@/assets/Playstore.png')" alt="" class="img-fluid" style="width: 160px;">
                 </a>
                 <a href="https://itunes.apple.com/id/app/indonesia-developer-summit/id1287587345">
-                  <img src="/home/static/Appstore.png" alt="" class="img-fluid" style="width: 160px;">
+                  <img :src="require('@/assets/Appstore.png')" alt="" class="img-fluid" style="width: 160px;">
                 </a>
               </dd>
             </dl>

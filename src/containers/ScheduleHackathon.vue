@@ -3,15 +3,15 @@
 
     <header
       style="
-        background-image: url('https://images.unsplash.com/photo-1486591978090-58e619d37fe7?dpr=1&auto=format&fit=crop&w=2850&q=60&cs=tinysrgb');
-        background-position: center left;
+        background-image: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=2550');
+        background-position: bottom left;
         background-size: cover;
+        overflow: hidden;
+        height: 500px;
       ">
       <div class="container">
         <div class="d-flex h-100">
-          <div class="display-3 text-light">
-            <HeaderTitle>Hackathon Schedule</HeaderTitle>
-          </div>
+          <HeaderTitle>Hackathon Schedule</HeaderTitle>
         </div>
       </div>
     </header>
@@ -83,7 +83,7 @@
           {
             time: '12:00 - 13:00',
             name: 'Keynote Speaker: Talking about Artificial intelligence',
-            image: '/home/static/speakers/ariya.jpg',
+            image: require('@/assets/speakers/ariya.jpg'),
             image_title: 'Ariya Hidayat',
             image_description: 'Someone',
           },
@@ -118,9 +118,6 @@
 <style lang="scss" scoped>
   .display-3 {
     padding: 200px 0;
-    text-shadow: 1px 1px #666;
-    text-transform: uppercase;
-    font-weight: bold;
   }
 
   .rundown-box {

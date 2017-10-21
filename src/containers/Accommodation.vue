@@ -4,13 +4,14 @@
     <header
       style="
         background-image: url('https://images.unsplash.com/photo-1468912637438-582f3f543cba?dpr=1&auto=format&fit=crop&w=2851&q=60&cs=tinysrgb');
-        background-position: center left;
+        background-position: top left;
+        background-size: cover;
+        overflow: hidden;
+        height: 500px;
       ">
       <div class="container">
         <div class="d-flex h-100">
-          <div class="text-light">
-            <HeaderTitle>Accommodation</HeaderTitle>
-          </div>
+          <HeaderTitle>Accommodation</HeaderTitle>
         </div>
       </div>
     </header>
@@ -51,3 +52,9 @@
 
   </section>
 </template>
+
+<style lang="scss" scoped>
+  .display-3 {
+    padding: 200px 0;
+  }
+</style>

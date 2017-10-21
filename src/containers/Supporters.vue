@@ -13,12 +13,12 @@
           <div class="row justify-content-center">
             <div class="col-7 col-md-4">
               <a href="https://refactory.id">
-                <img src="/home/static/refactory-horizontal.png" alt="" class="img-fluid">
+                <img :src="require('@/assets/refactory-horizontal.png')" alt="" class="img-fluid">
               </a>
             </div>
             <div class="col-md-7">
               <a href="https://codepolitan.com">
-                <img src="/home/static/codepolitan-white.png" alt="" class="img-fluid">
+                <img :src="require('@/assets/codepolitan-white.png')" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -39,7 +39,7 @@
             </div>
             <div class="col-7 col-md-3 mb-5">
               <a href="https://www.kominfo.go.id/">
-                <img src="/home/static/kominfo.png" alt="" class="img-fluid">
+                <img :src="require('@/assets/kominfo.png')" alt="" class="img-fluid">
               </a>
             </div>
           </div>

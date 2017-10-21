@@ -2,16 +2,16 @@
   <section>
 
     <header
-      style="
-        background-image: url('/home/static/sabuga.jpg');
-        background-size: cover;
-        background-position: center left;
-      ">
+      :style="{
+        'background-image': `url(${require('@/assets/sabuga.jpg')})`,
+        'background-position': 'center center',
+        'background-size': 'cover',
+        'overflow': 'hidden',
+        'height': '500px',
+      }">
       <div class="container">
         <div class="d-flex h-100">
-          <div class="display-3 text-light">
-            Venue
-          </div>
+          <HeaderTitle>Venue</HeaderTitle>
         </div>
       </div>
     </header>
@@ -41,15 +41,16 @@
 
     </section>
 
+    <section>
+      <img src="http://www.sabugacenter.com/media/lt1.jpg" alt="" width="100%">
+    </section>
+
   </section>
 </template>
 
 <style lang="scss" scoped>
   .display-3 {
     padding: 200px 0;
-    text-shadow: 1px 1px #666;
-    text-transform: uppercase;
-    font-weight: bold;
   }
 
   .mapouter {

@@ -24,6 +24,12 @@
       Menus: () => import('@/containers/Menus'),
       MainFooter: () => import('@/containers/Footer'),
     },
+
+    mounted () {
+      this.$on('contentPasses', () => {
+        console.log('sipsss')
+      })
+    },
   }
 </script>
 

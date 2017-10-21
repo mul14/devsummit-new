@@ -1,61 +1,86 @@
 <template>
-  <nav id="nav-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-1">
-          <router-link :to="{ name: 'Home'}" class="logo">
-            <img src="/home/static/icon.png" alt="DevSummit logo" class="img-fluid">
-          </router-link>
-        </div>
-        <div class="col-11 text-right d-none d-lg-block">
+  <div v-if="showMenu">
+    <nav id="nav-main">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-1 col-lg-2">
+            <router-link :to="{ name: 'Home'}" class="logo">
+              <img :src="require('@/assets/icon.png')" alt="DevSummit logo" class="img-fluid">
+              <span class="lead align-bottom d-none d-xl-inline-block"><strong
+                class="align-bottom font-weight-bold">Dev</strong>Summit</span>
+            </router-link>
+          </div>
+          <div class="col-lg-8 text-right d-none d-xl-block">
 
-          <a href="#" class="menu-submenu">
-            Why Attend
-            <div class="submenu">
-              <router-link :to="{ name: 'WhyAttendForDevelopers'}">For Developers</router-link>
-              <router-link :to="{ name: 'WhyAttendForCompany'}">For Company</router-link>
-              <router-link :to="{ name: 'WhyAttendForGeneral'}">For General</router-link>
-            </div>
-          </a>
+            <a href="#" class="menu-submenu">
+              Why Attend
+              <div class="submenu">
+                <router-link :to="{ name: 'WhyAttendForDevelopers'}">For Developers</router-link>
+                <router-link :to="{ name: 'WhyAttendForCompany'}">For Company</router-link>
+                <router-link :to="{ name: 'WhyAttendForGeneral'}">For General</router-link>
+              </div>
+            </a>
 
-          <a href="#" class="menu-submenu">
-            Agenda
-            <div class="submenu">
-              <router-link :to="{ name: 'ScheduleConference'}">Conference Schedule</router-link>
-              <router-link :to="{ name: 'ScheduleHackathon'}">Hackathon</router-link>
-              <router-link :to="{ name: 'ScheduleSpeedDating'}">Speed Dating</router-link>
-            </div>
-          </a>
+            <a href="#" class="menu-submenu">
+              Agenda
+              <div class="submenu">
+                <router-link :to="{ name: 'ScheduleConference'}">Conference Schedule</router-link>
+                <router-link :to="{ name: 'ScheduleHackathon'}">Hackathon</router-link>
+                <router-link :to="{ name: 'ScheduleSpeedDating'}">Speed Dating</router-link>
+              </div>
+            </a>
 
-          <a href="#" class="menu-submenu">
-            Venue
-            <div class="submenu">
-              <router-link :to="{ name: 'VenueMap'}">Venue Map</router-link>
-              <router-link :to="{ name: 'Accommodation'}">Accommodation</router-link>
-            </div>
-          </a>
+            <a href="#" class="menu-submenu">
+              Venue
+              <div class="submenu">
+                <router-link :to="{ name: 'VenueMap'}">Venue Map</router-link>
+                <router-link :to="{ name: 'Accommodation'}">Accommodation</router-link>
+              </div>
+            </a>
 
-          <a href="#" class="menu-submenu">
-            Get Involved
-            <div class="submenu">
-              <router-link :to="{ name: 'Sponsor'}">Sponsor Us</router-link>
-              <router-link :to="{ name: 'Media'}">Media</router-link>
-              <router-link :to="{ name: 'WhyAttendForDevelopers'}">Speaking opportunities</router-link>
-              <router-link :to="{ name: 'WhyAttendForDevelopers'}">Exhibition</router-link>
-            </div>
-          </a>
+            <a href="#" class="menu-submenu">
+              Get Involved
+              <div class="submenu">
+                <router-link :to="{ name: 'Sponsor'}">Sponsor Us</router-link>
+                <router-link :to="{ name: 'Media'}">Media</router-link>
+                <router-link :to="{ name: 'WhyAttendForDevelopers'}">Speaking opportunities</router-link>
+                <router-link :to="{ name: 'WhyAttendForDevelopers'}">Exhibition</router-link>
+              </div>
+            </a>
 
-          <router-link :to="{ name: 'CodeOfConduct'}">Code of Conduct</router-link>
+            <router-link :to="{ name: 'CodeOfConduct'}">Code of Conduct</router-link>
+          </div>
 
-          <router-link :to="{ name: 'GetTickets'}" class="btn-important">
-            Get Tickets!
-          </router-link>
+          <div class="col-lg-2 text-right">
+            <router-link :to="{ name: 'GetTickets'}" class="btn-important">
+              Get Tickets!
+            </router-link>
+          </div>
 
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
+
+<script>
+  import vuex from '@/vuex'
+
+  export default {
+    name: 'Menus',
+
+    computed: {
+      showMenu: {
+        get () { return vuex.state.showMenu},
+        set (value) { vuex.state.showMenu = value },
+      },
+    },
+
+    mounted () {
+
+    },
+  }
+</script>
 
 <style lang="scss" scoped>
   nav {
@@ -64,8 +89,11 @@
 
   .logo {
     padding: 0;
-    width: 52px;
     height: auto;
+
+    img {
+      width: 52px;
+    }
 
     &:hover {
       background: none;
@@ -77,7 +105,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     z-index: 9999;
   }
 
@@ -152,5 +180,12 @@
       }
     }
 
+    .slidedown-enter-active, .slidedown-leave-active {
+      transition: all 1s ease-in;
+      border: 1px solid red;
+    }
+    .slidedown-enter, .slidedown-leave-to {
+      opacity: 0
+    }
   }
 </style>

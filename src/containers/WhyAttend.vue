@@ -1,21 +1,9 @@
 <template>
   <div>
-    <section class="pt-5 p-lg-5" id="video">
+    <section class="py-5" id="benefits">
       <div class="container">
 
         <BigTitle>Benefits of Attending</BigTitle>
-
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe width="100%" height="560" src="https://www.youtube.com/embed/cmdRxmFEbg8" frameborder="0"
-                  allowfullscreen class="embed-responsive"></iframe>
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="py-5" id="benefits">
-      <div class="container">
 
         <ZigzagBox
           :leftText="true"

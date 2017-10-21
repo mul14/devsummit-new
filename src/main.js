@@ -15,5 +15,8 @@ require('./bootstrap.scss')
 new Vue({
   el: '#app',
   router,
+  data () {
+    return {}
+  },
   render: h => h(App),
 })

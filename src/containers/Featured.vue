@@ -1,11 +1,13 @@
 <template>
-  <section>
+  <section class="d-flex align-items-center">
     <div class="container text-light">
 
       <div class="row">
-        <div class="col-12 col-lg-8 mx-auto">
-          <img src="/home/static/devsummit-logo.svg" alt="DevSummit logo" class="img-fluid">
+        <div class="col-12 col-lg-5 mx-auto">
+          <img :src="require('@/assets/devsummit-logo.svg')" alt="DevSummit logo" class="img-fluid">
         </div>
+      </div>
+      <div class="row">
         <div class="mt-4 text-center mx-auto">
           <div class="lead text-uppercase px-4 py-1"
                style="border: 0 solid white; border-radius: 4px; background: #63798a; color: white;">
@@ -32,7 +34,7 @@
 
       <div class="text-center">
 
-        <div class="h3 mt-5" style="font-weight: bolder; color: #f1c40f;">
+        <div class="h3" style="font-weight: bolder; color: #f1c40f;">
           <span>GET TICKETS!</span>
         </div>
 
@@ -46,12 +48,12 @@
       <div class="row justify-content-center">
         <div class="col-6 col-md-3 text-md-right">
           <a href="https://play.google.com/store/apps/details?id=io.devsummit.app.android">
-            <img src="/home/static/Playstore.png" alt="" class="img-fluid" style="width: 160px;">
+            <img :src="require('@/assets/Playstore.png')" alt="" class="img-fluid" style="width: 200px;">
           </a>
         </div>
         <div class="col-6 col-md-3">
           <a href="https://itunes.apple.com/id/app/indonesia-developer-summit/id1287587345">
-            <img src="/home/static/Appstore.png" alt="" class="img-fluid" style="width: 160px;">
+            <img :src="require('@/assets/Appstore.png')" alt="" class="img-fluid" style="width: 200px;">
           </a>
         </div>
       </div>
@@ -99,5 +101,6 @@
     background: $purple;
     background-image: linear-gradient(#000 40%, #232741 100%);
     padding: 100px 0;
+    height: 100vh;
   }
 </style>

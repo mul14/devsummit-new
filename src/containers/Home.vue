@@ -2,9 +2,9 @@
   <div>
     <Featured/>
 
-    <div class="molecule">
-      <Topics/>
-      <Speakers/>
+    <div ref="content" class="molecule">
+      <TheVideo/>
+      <Profile/>
     </div>
 
     <WhyAttend/>
@@ -13,15 +13,29 @@
 </template>
 
 <script>
+  import vuex from '@/vuex'
+
   export default {
     name: 'Home',
 
     components: {
       Featured: () => import('./Featured'),
+      TheVideo: () => import('./Video'),
       Topics: () => import('./Topics'),
       Speakers: () => import('./Speakers'),
       WhyAttend: () => import('./WhyAttend'),
       Supporters: () => import('./Supporters'),
+      Profile: () => import('./Profile'),
+    },
+
+    mounted () {
+      window.addEventListener('scroll', (ev) => {
+        if (window.scrollY > this.$refs.content.offsetTop) {
+          vuex.commit('showMenu', true)
+        } else {
+          vuex.commit('showMenu', false)
+        }
+      })
     },
   }
 </script>
@@ -33,7 +47,7 @@
   }
 
   .molecule {
-    background: #fcfcfc url('/home/static/molecule.svg');
+    background: #fcfcfc;
     background-size: cover;
   }
 

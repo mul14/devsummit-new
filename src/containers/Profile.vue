@@ -1,87 +1,88 @@
 <template>
-  <section id="speakers" class="p-5">
-    <div class="container">
+  <section>
+    <div class="container py-5">
 
-      <BigTitle>Speakers</BigTitle>
+      <BigTitle>SPEAKERS</BigTitle>
 
-      <div class="row">
-
-        <div v-for="speaker in speakers" class="col-12 col-md-4 col-lg-3 mt-4">
-          <FigureBox :image="speaker.image">
-            <div class="text-center">
-              <div class="lead">{{ speaker.name }}</div>
-              <div class="small text-muted">{{ speaker.description }}</div>
-            </div>
-          </FigureBox>
+      <div v-for="speaker in speakers" class="row pb-5">
+        <div class="col-12 col-lg-2"></div>
+        <div class="col-12 col-lg-4 text-center">
+          <img :src="speaker.image" alt="" class="img-fluid">
         </div>
-
-        <!--<figure class="link-more col-12 col-md-3 col-lg-3 p-0 m-2">-->
-        <!--<a href="#download" class="h-100">-->
-        <!--<div class="h3 d-flex align-items-center h-100" style="font-weight: lighter;">-->
-        <!--<div class="justify-content-center text-dark text-center w-100">-->
-        <!--<div class="display-4">4</div>-->
-        <!--<div>more speakers</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</a>-->
-        <!--</figure>-->
-
+        <div class="col-12 col-lg-4">
+          <div class="display-4 pt-2 text-center text-lg-left" style="font-family: Georgia; color: #494949;">
+            {{ speaker.name }}
+          </div>
+          <div class="lead text-muted text-center text-lg-left">
+            {{ speaker.title }}
+          </div>
+          <blockquote class="py-4 h2 text-muted" style="font-weight: lighter;">
+            {{ speaker.description }}
+          </blockquote>
+        </div>
       </div>
+
     </div>
   </section>
 </template>
 
 <script>
   export default {
-    name: 'Speakers',
+    name: 'Profile',
 
     data () {
       return {
         speakers: [
           {
             name: 'Ariya Hidayat',
-            description: 'Creator of PhantomJS & Esprima',
             image: require('@/assets/speakers/ariya.jpg'),
+            title: 'Creator of PhantomJS & Esprima',
+            description: 'I will create something useful',
           },
           {
             name: 'Alexander Makarov',
-            description: 'Yii Framework Core Developer',
             image: require('@/assets/speakers/samdark.jpg'),
+            title: 'Yii Framework Core Developer',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
           },
+        ],
+        others: [
           {
             name: '???',
             description: '???',
+            title: '',
             image: 'https://i.pinimg.com/736x/11/26/06/112606b29bbd824e637d395d55782932--man-candy-beautiful-people.jpg',
           },
           {
             name: '???',
             description: '???',
+            title: '',
             image: 'https://i.pinimg.com/736x/45/5e/a8/455ea87e1d00c62e9e16a29ac8aa7a4b--hotels-for-dogs-emma-roberts.jpg',
           },
           {
             name: '???',
             description: '???',
+            title: '',
             image: 'https://www.american.edu/uploads/profiles/large/Hannah_Debelius_045arw-small_2.JPG',
           },
           {
             name: '???',
             description: '???',
+            title: '',
             image: 'http://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg',
           },
           {
             name: '???',
             description: '???',
+            title: '',
             image: 'https://www.scheller.gatech.edu/thumb/width/600/cropratio/1:1/pix/directory/bryant_scott_profile.jpg',
           },
-        ],
+        ]
       }
     },
   }
 </script>
 
 <style lang="scss" scoped>
-  a {
-    text-decoration: none;
-  }
-</style>
 
+</style>
