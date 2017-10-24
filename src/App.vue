@@ -25,11 +25,6 @@
       MainFooter: () => import('@/containers/Footer'),
     },
 
-    mounted () {
-      this.$on('contentPasses', () => {
-        console.log('sipsss')
-      })
-    },
   }
 </script>
 

@@ -12,23 +12,23 @@
           </div>
           <div class="col-lg-8 text-right d-none d-xl-block">
 
-            <a href="#" class="menu-submenu">
-              Why Attend
-              <div class="submenu">
-                <router-link :to="{ name: 'WhyAttendForDevelopers'}">For Developers</router-link>
-                <router-link :to="{ name: 'WhyAttendForCompany'}">For Company</router-link>
-                <router-link :to="{ name: 'WhyAttendForGeneral'}">For General</router-link>
-              </div>
-            </a>
+            <!--<a href="#" class="menu-submenu">-->
+              <!--Why Attend-->
+              <!--<div class="submenu">-->
+                <!--<router-link :to="{ name: 'WhyAttendForDevelopers'}">For Developers</router-link>-->
+                <!--<router-link :to="{ name: 'WhyAttendForCompany'}">For Company</router-link>-->
+                <!--<router-link :to="{ name: 'WhyAttendForGeneral'}">For General</router-link>-->
+              <!--</div>-->
+            <!--</a>-->
 
-            <a href="#" class="menu-submenu">
-              Agenda
-              <div class="submenu">
-                <router-link :to="{ name: 'ScheduleConference'}">Conference Schedule</router-link>
-                <router-link :to="{ name: 'ScheduleHackathon'}">Hackathon</router-link>
-                <router-link :to="{ name: 'ScheduleSpeedDating'}">Speed Dating</router-link>
-              </div>
-            </a>
+            <!--<a href="#" class="menu-submenu">-->
+              <!--Agenda-->
+              <!--<div class="submenu">-->
+                <!--<router-link :to="{ name: 'ScheduleConference'}">Conference Schedule</router-link>-->
+                <!--<router-link :to="{ name: 'ScheduleHackathon'}">Hackathon</router-link>-->
+                <!--<router-link :to="{ name: 'ScheduleSpeedDating'}">Speed Dating</router-link>-->
+              <!--</div>-->
+            <!--</a>-->
 
             <a href="#" class="menu-submenu">
               Venue
@@ -38,23 +38,25 @@
               </div>
             </a>
 
-            <a href="#" class="menu-submenu">
-              Get Involved
-              <div class="submenu">
-                <router-link :to="{ name: 'Sponsor'}">Sponsor Us</router-link>
-                <router-link :to="{ name: 'Media'}">Media</router-link>
-                <router-link :to="{ name: 'WhyAttendForDevelopers'}">Speaking opportunities</router-link>
-                <router-link :to="{ name: 'WhyAttendForDevelopers'}">Exhibition</router-link>
-              </div>
-            </a>
+            <!--<a href="#" class="menu-submenu">-->
+              <!--Get Involved-->
+              <!--<div class="submenu">-->
+                <!--<router-link :to="{ name: 'Sponsor'}">Sponsor Us</router-link>-->
+                <!--<router-link :to="{ name: 'Media'}">Media</router-link>-->
+                <!--<router-link :to="{ name: 'WhyAttendForDevelopers'}">Speaking opportunities</router-link>-->
+                <!--<router-link :to="{ name: 'WhyAttendForDevelopers'}">Exhibition</router-link>-->
+              <!--</div>-->
+            <!--</a>-->
 
             <router-link :to="{ name: 'CodeOfConduct'}">Code of Conduct</router-link>
           </div>
 
           <div class="col-lg-2 text-right">
-            <router-link :to="{ name: 'GetTickets'}" class="btn-important">
+            <!--<router-link :to="{ name: 'GetTickets'}" class="btn-important">-->
+            <a href="javascript:void(0)" @click="getTickets" class="btn-important">
               Get Tickets!
-            </router-link>
+            </a>
+            <!--</router-link>-->
           </div>
 
         </div>
@@ -64,21 +66,43 @@
 </template>
 
 <script>
-  import vuex from '@/vuex'
+  import { mapState } from 'vuex'
 
   export default {
     name: 'Menus',
 
     computed: {
-      showMenu: {
-        get () { return vuex.state.showMenu},
-        set (value) { vuex.state.showMenu = value },
+      ...mapState(['showMenu']),
+    },
+
+    methods: {
+      getTickets () {
+        if (this.userAgentDetector() === 'android') {
+          window.location = 'https://play.google.com/store/apps/details?id=io.devsummit.app.android'
+          return
+        }
+
+        if (this.userAgentDetector() === 'ios') {
+          window.location = 'https://itunes.apple.com/id/app/indonesia-developer-summit/id1287587345'
+          return
+        }
+
+        this.$router.push({ name: 'Home' })
+        window.scrollTo(0, 0)
       },
-    },
 
-    mounted () {
+      userAgentDetector() {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    },
+        if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
+          return "ios";
+        }
+
+        if (/Android/i.test(userAgent)) {
+          return 'android'
+        }
+      }
+    }
   }
 </script>
 
@@ -178,14 +202,6 @@
         background: white;
         color: black;
       }
-    }
-
-    .slidedown-enter-active, .slidedown-leave-active {
-      transition: all 1s ease-in;
-      border: 1px solid red;
-    }
-    .slidedown-enter, .slidedown-leave-to {
-      opacity: 0
     }
   }
 </style>

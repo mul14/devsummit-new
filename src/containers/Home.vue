@@ -13,8 +13,6 @@
 </template>
 
 <script>
-  import vuex from '@/vuex'
-
   export default {
     name: 'Home',
 
@@ -31,9 +29,9 @@
     mounted () {
       window.addEventListener('scroll', (ev) => {
         if (window.scrollY > this.$refs.content.offsetTop) {
-          vuex.commit('showMenu', true)
+          this.$store.commit('showMenu', true)
         } else {
-          vuex.commit('showMenu', false)
+          this.$store.commit('showMenu', false)
         }
       })
     },

@@ -41,12 +41,23 @@
 
     </section>
 
-    <section>
-      <img src="http://www.sabugacenter.com/media/lt1.jpg" alt="" width="100%">
-    </section>
+    <!--<section>-->
+    <!--<img src="http://www.sabugacenter.com/media/lt1.jpg" alt="" width="100%">-->
+    <!--</section>-->
 
   </section>
 </template>
+
+<script>
+  export default {
+    name: 'VenueMap',
+
+    mounted () {
+      this.$store.commit('showMenu', true)
+    },
+  }
+</script>
+
 
 <style lang="scss" scoped>
   .display-3 {

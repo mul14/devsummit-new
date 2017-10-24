@@ -9,7 +9,7 @@
 
 <style scoped>
   h4 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: lighter;
   }
 

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './vuex'
 
 Vue.config.productionTip = false
 
@@ -15,8 +16,6 @@ require('./bootstrap.scss')
 new Vue({
   el: '#app',
   router,
-  data () {
-    return {}
-  },
+  store,
   render: h => h(App),
 })

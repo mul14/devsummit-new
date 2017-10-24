@@ -1,6 +1,6 @@
 <template>
-  <section id="video"
-           style="height: 100vh; background: url('https://images.unsplash.com/photo-1477281765962-ef34e8bb0967?w=2464') center bottom; background-size: 1290px;">
+  <section :style="{ 'background-image': `url(${require('@/assets/video-background.jpg')})` }">
+    <a name="video"></a>
     <div class="d-flex align-items-center" style="background: rgba(0,0,0,0.8); height: 100vh;">
 
       <div class="container">
@@ -10,7 +10,7 @@
             <div class="col-12 col-lg-6">
               <div class="row">
                 <div class="col-12">
-                  <h2 class="display-4"
+                  <h2 class="display-4 pt-5 p-lg-0"
                       style="color: white; font-weight: lighter; text-shadow: 1px 1px #000; font-family: 'Geeza Pro', Georgia, times;">
                     What is DevSummit
                   </h2>
@@ -19,14 +19,23 @@
                 </div>
                 <div class="col-10">
                   <div class="text-light">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci alias architecto at atque cumque, dolorem eligendi ex explicabo inventore magni minus molestiae numquam officia provident sed totam vitae?
+                    <p>
+                      Indonesia Developer Summit is an event specifically aimed to stakeholders of the emerging
+                      technology industry in Indonesia, and in general, for the public who are the users
+                      of it's services, products, and services.
+                    </p>
+
+                    <p>
+                      The event is open to public, packed in a 3 days conference that consists of three major
+                      topics: Artificial Intelligence, BlockChain and Open Source.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-3 col-lg-1"></div>
             <div class="col-6 col-lg-2 p-5">
-              <a href="javascript:void(0)" @click="videoToggle">
+              <a href="#video" @click="videoToggle" class="pb-5 mb-5 pb-lg-0 mb-lg-0">
                 <img src="http://noem.at/images/upcycling/play.png" alt="" class="img-fluid">
               </a>
             </div>
@@ -65,22 +74,39 @@
 </template>
 
 <script>
+  import { mapState, mapMutations } from 'vuex'
+
   export default {
     name: 'Video',
 
-    data () {
-      return {
-        showVideo: false,
-      }
+    computed: {
+      ...mapState(['showVideo']),
     },
 
     methods: {
       videoToggle () {
-        this.showVideo = !this.showVideo
+        this.$store.commit('showVideo', !this.$store.state.showVideo)
+
+        const html = document.querySelector('html')
+        const body = document.querySelector('body')
+
+        if (this.showVideo) {
+          html.style.overflow = 'hidden'
+          body.style.overflow = 'hidden'
+        } else {
+          html.style.overflow = 'auto'
+          body.style.overflow = 'auto'
+        }
+
       },
     },
   }
 </script>
 
 <style lang="scss" scoped>
+  section {
+    height: 100vh;
+    background-position: center center;
+    background-size: 1420px;
+  }
 </style>

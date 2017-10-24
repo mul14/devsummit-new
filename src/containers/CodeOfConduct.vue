@@ -46,6 +46,16 @@
 
 </template>
 
+<script>
+  export default {
+    name: 'CodeOfConduct',
+
+    mounted () {
+      this.$store.commit('showMenu', true)
+    },
+  }
+</script>
+
 <style lang="scss" scoped>
   section {
     padding: 160px 0 80px;

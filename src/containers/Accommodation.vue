@@ -18,7 +18,7 @@
 
     <section class="bg-light py-5">
 
-      <BigTitle>Hotel Near Venue</BigTitle>
+      <BigTitle>Hotels Near Venue</BigTitle>
 
       <div class="container">
         <div class="row">
@@ -27,7 +27,7 @@
               image="http://www.tunehotels.com/tune_media/images/Hotel/bandung/bandung-facade-1.jpg">
               <div class="lead">Tune Hotels</div>
               <div class="small text-muted">Distance to venue: Less than 1km from Sabuga</div>
-              <a href="https://google.com" target="_blank" class="btn btn-sm btn-warning mt-3">More info</a>
+              <a href="http://www.tunehotels.com/id/en/our-hotels/bandung-dago/" target="_blank" class="btn btn-sm btn-warning mt-3">More info</a>
             </FigureBox>
           </div>
           <div class="col-6">
@@ -35,15 +35,7 @@
               image="http://sebandung.com/wp-content/uploads/2014/07/Kamar-Hotel-Royal-Dago.png">
               <div class="lead">Royal Dago</div>
               <div class="small text-muted">Distance to venue: Less than 1km from Sabuga</div>
-              <a href="https://google.com" target="_blank" class="btn btn-sm btn-warning mt-3">More info</a>
-            </FigureBox>
-          </div>
-          <div class="col-6">
-            <FigureBox
-              image="https://exp.cdn-hotels.com/hotels/17000000/16090000/16085200/16085140/9e88c960_z.jpg">
-              <div class="lead">Airy Dago</div>
-              <div class="small text-muted">Distance to venue: Less than 1km from Sabuga</div>
-              <a href="https://google.com" target="_blank" class="btn btn-sm btn-warning mt-3">More info</a>
+              <a href="http://www.royalhotelsbandung.com/dago/" target="_blank" class="btn btn-sm btn-warning mt-3">More info</a>
             </FigureBox>
           </div>
         </div>
@@ -52,6 +44,16 @@
 
   </section>
 </template>
+
+<script>
+  export default {
+    name: 'Accomodation',
+
+    mounted () {
+      this.$store.commit('showMenu', true)
+    },
+  }
+</script>
 
 <style lang="scss" scoped>
   .display-3 {
