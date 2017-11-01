@@ -42,7 +42,7 @@
             name: 'Ariya Hidayat',
             image: require('@/assets/speakers/ariya.jpg'),
             title: 'Creator of PhantomJS & Esprima',
-            description: '',
+            description: 'Unlocking Your Potential: The Purification Framework',
           },
           {
             name: 'Alexander Makarov',
