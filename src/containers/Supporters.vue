@@ -90,12 +90,14 @@
           AxiosGet('http://api.devsummit.io:5000/api/v1/partners')
         const communities = res.data.data
 
-        this.communities = communities.map(community => {
-          return {
-            name: community.name,
-            website: community.website,
-            photo: community.photo.replace(5000, ''),
-          }
+        this.communities = communities
+          .filter(community.type === 'community')
+          .map(community => {
+            return {
+              name: community.name,
+              website: community.website,
+              photo: community.photo.replace(5000, ''),
+            }
         })
       }
       catch (err) {
