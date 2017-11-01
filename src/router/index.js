@@ -85,5 +85,10 @@ export default new Router({
       name: 'PrivacyPolicy',
       component: () => import('@/containers/PrivacyPolicy'),
     },
+    {
+      path: '*',
+      name: '404',
+      component: () => import('@/containers/Home'),
+    },
   ],
 })
