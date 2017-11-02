@@ -60,7 +60,7 @@
   @import "../../../bootstrap/scss/mixins/breakpoints";
 
   @include media-breakpoint-down(sm) {
-    .display-3 {  font-size: 40px;  }
+    .display-3 {  font-size: 2rem;  }
   }
 
   .display-3 {
