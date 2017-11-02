@@ -87,7 +87,7 @@
     async mounted () {
       try {
         const res = await
-          AxiosGet('http://api.devsummit.io:5000/api/v1/partners')
+          AxiosGet('https://api.devsummit.io/api/v1/partners')
         const communities = res.data.data
 
         this.communities = communities
@@ -98,7 +98,7 @@
               website: community.website,
               photo: community.photo.replace(5000, ''),
             }
-        })
+          })
       }
       catch (err) {
         console.error(err)
