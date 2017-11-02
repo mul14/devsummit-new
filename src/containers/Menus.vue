@@ -1,16 +1,49 @@
 <template>
-  <div v-if="showMenu">
-    <nav id="nav-main">
+  <div>
+    <div v-if="overlayMenu" class="overlay-menu">
       <div class="container">
-        <div class="row no-gutters">
-          <div class="col-1 col-lg-2">
-            <router-link :to="{ name: 'Home'}" class="logo">
-              <img :src="require('@/assets/icon.png')" alt="DevSummit logo" class="img-fluid">
-              <span class="lead align-bottom d-none d-xl-inline-block"><strong
-                class="align-bottom font-weight-bold">Dev</strong>Summit</span>
-            </router-link>
-          </div>
-          <div class="col-lg-8 text-right d-none d-xl-block">
+        <dl class="">
+          <dd>
+            <a href="javascript:void(0);" @click="toggleOverlayMenu" style="color: white; font-size: 2.2rem;">&times;</a>
+          </dd>
+          <dd>
+            <router-link :to="{ name: 'Home'}" class="d-block">Home</router-link>
+          </dd>
+          <dd>
+            <router-link :to="{ name: 'VenueMap'}" class="d-block">Venue Map</router-link>
+          </dd>
+          <dd>
+            <router-link :to="{ name: 'Accommodation'}" class="d-block">Accommodation</router-link>
+          </dd>
+          <dd>
+            <router-link :to="{ name: 'CodeOfConduct'}" class="d-block">Code of Conduct</router-link>
+          </dd>
+          <dd><a href="javascript:void(0)" @click="getTickets" class="btn-important d-block">Get Tickets!</a></dd>
+        </dl>
+      </div>
+    </div>
+    <div v-if="showMenu">
+      <nav id="nav-main">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-4 d-inline-block d-xl-none">
+              <a
+                @click="toggleOverlayMenu"
+                href="javascript:void(0)"
+                class="py-0"
+                style="color: white; font-size: 2.2rem;"
+              >
+                &#9776;
+              </a>
+            </div>
+            <div class="col-auto col-lg-2 mx-auto">
+              <router-link :to="{ name: 'Home'}" class="logo">
+                <img :src="require('@/assets/icon.png')" alt="DevSummit logo" class="img-fluid">
+                <span class="lead align-bottom d-none d-xl-inline-block"><strong
+                  class="align-bottom font-weight-bold">Dev</strong>Summit</span>
+              </router-link>
+            </div>
+            <div class="col-auto col-lg-8 text-right d-none d-xl-block ml-auto">
 
             <!--<a href="#" class="menu-submenu">-->
               <!--Why Attend-->
@@ -30,13 +63,13 @@
               <!--</div>-->
             <!--</a>-->
 
-            <a href="#" class="menu-submenu">
-              Venue
-              <div class="submenu">
-                <router-link :to="{ name: 'VenueMap'}">Venue Map</router-link>
-                <router-link :to="{ name: 'Accommodation'}">Accommodation</router-link>
-              </div>
-            </a>
+              <a href="#" class="menu-submenu">
+                Venue
+                <div class="submenu">
+                  <router-link :to="{ name: 'VenueMap'}">Venue Map</router-link>
+                  <router-link :to="{ name: 'Accommodation'}">Accommodation</router-link>
+                </div>
+              </a>
 
             <!--<a href="#" class="menu-submenu">-->
               <!--Get Involved-->
@@ -48,20 +81,21 @@
               <!--</div>-->
             <!--</a>-->
 
-            <router-link :to="{ name: 'CodeOfConduct'}">Code of Conduct</router-link>
-          </div>
+              <router-link :to="{ name: 'CodeOfConduct'}">Code of Conduct</router-link>
+            </div>
 
-          <div class="col-lg-2 text-right">
-            <!--<router-link :to="{ name: 'GetTickets'}" class="btn-important">-->
-            <a href="javascript:void(0)" @click="getTickets" class="btn-important">
-              Get Tickets!
-            </a>
-            <!--</router-link>-->
-          </div>
+            <div class="ml-auto">
+              <!--<router-link :to="{ name: 'GetTickets'}" class="btn-important">-->
+              <a href="javascript:void(0)" @click="getTickets" class="btn-important">
+                Get Tickets!
+              </a>
+              <!--</router-link>-->
+            </div>
 
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
 </template>
 
@@ -72,10 +106,15 @@
     name: 'Menus',
 
     computed: {
-      ...mapState(['showMenu']),
+      ...mapState(['showMenu', 'overlayMenu']),
     },
 
     methods: {
+
+      toggleOverlayMenu () {
+        this.$store.commit('overlayMenu', !Boolean(this.$store.state.overlayMenu))
+      },
+
       getTickets () {
         if (this.userAgentDetector() === 'android') {
           window.location = 'https://play.google.com/store/apps/details?id=io.devsummit.app.android'
@@ -87,22 +126,22 @@
           return
         }
 
-        this.$router.push({ name: 'Home' })
+        this.$router.push({name: 'Home'})
         window.scrollTo(0, 0)
       },
 
-      userAgentDetector() {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      userAgentDetector () {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera
 
         if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
-          return "ios";
+          return 'ios'
         }
 
         if (/Android/i.test(userAgent)) {
           return 'android'
         }
-      }
-    }
+      },
+    },
   }
 </script>
 
@@ -203,5 +242,15 @@
         color: black;
       }
     }
+  }
+
+  .overlay-menu {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.99);
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 </style>

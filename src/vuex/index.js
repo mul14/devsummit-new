@@ -5,12 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    showMenu: false,
+    showMenu: true,
+    overlayMenu: false,
     showVideo: false,
   },
   mutations: {
     showMenu (state, value) {
       state.showMenu = Boolean(value)
+    },
+    overlayMenu (state, value) {
+      state.overlayMenu = Boolean(value)
     },
     showVideo (state, value) {
       state.showVideo = Boolean(value)

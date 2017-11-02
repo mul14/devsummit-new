@@ -12,6 +12,10 @@ Vue.component('Box', () => import('@/components/Box'))
 
 require('./bootstrap.scss')
 
+router.afterEach((to, from) => {
+  store.commit('overlayMenu', false)
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
