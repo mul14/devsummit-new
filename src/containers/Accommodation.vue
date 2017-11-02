@@ -56,6 +56,13 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../../../bootstrap/scss/variables";
+  @import "../../../bootstrap/scss/mixins/breakpoints";
+
+  @include media-breakpoint-down(sm) {
+    .display-3 {  font-size: 40px;  }
+  }
+
   .display-3 {
     padding: 200px 0;
   }
