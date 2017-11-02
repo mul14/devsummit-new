@@ -27,6 +27,8 @@
     },
 
     mounted () {
+      this.$store.commit('showMenu', false)
+
       window.addEventListener('scroll', (ev) => {
         if (window.scrollY > this.$refs.content.offsetTop) {
           this.$store.commit('showMenu', true)
