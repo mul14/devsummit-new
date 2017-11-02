@@ -11,7 +11,7 @@
         <div class="row">
 
           <div class="col-md-2"></div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 px-5">
             <p>
               DevSummit is a tech event intended for networking and collaboration in the tech community. We value the participation
               of each member and want all attendees to have a meaningful and memorable experience.</p>
