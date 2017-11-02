@@ -22,7 +22,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <FigureBox
               image="http://www.tunehotels.com/tune_media/images/Hotel/bandung/bandung-facade-1.jpg">
               <div class="lead">Tune Hotels</div>
@@ -30,7 +30,7 @@
               <a href="http://www.tunehotels.com/id/en/our-hotels/bandung-dago/" target="_blank" class="btn btn-sm btn-warning mt-3">More info</a>
             </FigureBox>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <FigureBox
               image="http://sebandung.com/wp-content/uploads/2014/07/Kamar-Hotel-Royal-Dago.png">
               <div class="lead">Royal Dago</div>
