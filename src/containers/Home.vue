@@ -35,6 +35,10 @@
         }
       })
     },
+
+    destroyed () {
+      window.removeEventListener('scroll')
+    },
   }
 </script>
 
