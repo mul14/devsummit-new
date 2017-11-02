@@ -1,7 +1,7 @@
 <template>
   <section :style="{ 'background-image': `url(${require('@/assets/video-background.jpg')})` }">
     <a name="video"></a>
-    <div class="d-flex align-items-center" style="background: rgba(0,0,0,0.8); height: 100vh;">
+    <div class="d-flex align-items-center" style="background: rgba(0,0,0,0.8); min-height: 100vh;">
 
       <div class="container">
         <div v-if="!showVideo">
@@ -105,7 +105,7 @@
 
 <style lang="scss" scoped>
   section {
-    height: 100vh;
+    min-height: 100vh;
     background-position: center center;
     background-size: 1420px;
   }

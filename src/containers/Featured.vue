@@ -126,7 +126,7 @@
     background: $purple;
     background-image: linear-gradient(#232741 60%, #000 100%);
     padding: 100px 0;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .particle {
@@ -134,7 +134,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     z-index: 0;
   }
 </style>
