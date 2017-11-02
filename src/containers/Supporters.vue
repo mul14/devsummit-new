@@ -91,7 +91,7 @@
         const communities = res.data.data
 
         this.communities = communities
-          .filter(community.type === 'community')
+          .filter(community => community.type === 'community')
           .map(community => {
             return {
               name: community.name,
