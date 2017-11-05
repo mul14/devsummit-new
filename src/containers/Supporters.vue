@@ -9,7 +9,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-8 col-md-2 mb-5" v-for="sponsor in sponsors">
+            <div class="col-8 col-md-4 mb-5" v-for="sponsor in sponsors">
               <img :src="sponsor.photo" :alt="sponsor.name" class="img-fluid">
             </div>
           </div>
