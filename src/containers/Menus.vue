@@ -54,14 +54,14 @@
               <!--</div>-->
             <!--</a>-->
 
-            <!--<a href="#" class="menu-submenu">-->
-              <!--Agenda-->
-              <!--<div class="submenu">-->
+            <a href="#" class="menu-submenu">
+              Agenda
+              <div class="submenu">
                 <!--<router-link :to="{ name: 'ScheduleConference'}">Conference Schedule</router-link>-->
-                <!--<router-link :to="{ name: 'ScheduleHackathon'}">Hackathon</router-link>-->
+                <router-link :to="{ name: 'Hackathon'}">Hackathon</router-link>
                 <!--<router-link :to="{ name: 'ScheduleSpeedDating'}">Speed Dating</router-link>-->
-              <!--</div>-->
-            <!--</a>-->
+              </div>
+            </a>
 
               <a href="#" class="menu-submenu">
                 Venue

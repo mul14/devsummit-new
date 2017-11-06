@@ -46,14 +46,14 @@ export default new Router({
       component: () => import('@/containers/ScheduleConference'),
     },
     {
-      path: '/schedule/hackathon',
-      name: 'ScheduleHackathon',
-      component: () => import('@/containers/ScheduleHackathon'),
-    },
-    {
       path: '/schedule/speed_dating',
       name: 'ScheduleSpeedDating',
       component: () => import('@/containers/ScheduleSpeedDating'),
+    },
+    {
+      path: '/hackathon',
+      name: 'Hackathon',
+      component: () => import('@/containers/Hackathon'),
     },
     {
       path: '/venue',
