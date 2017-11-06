@@ -38,11 +38,9 @@
         <div class="row">
           <div class="col-12">
             <div class="">
-              <BigTitle>Total Prize 25.000.000</BigTitle>
-              <!--<div class="text-center">by</div>-->
-              <!--<div class="text-center">-->
-              <!--<img :src="require('@/assets/mainapi.net.png')" alt="" class="img-fluid" width="200">-->
-              <!--</div>-->
+              <BigTitle>Prize</BigTitle>
+              <div class="h1">Winner: IDR 10.000.000</div>
+              <div class="h1">Runner up: IDR 7.500.000</div>
             </div>
           </div>
         </div>
@@ -135,6 +133,26 @@
                   <li></li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="col-2"></div>
+            <div class="col-8">
+              <div class="h1">
+                How to Register
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <div class="col-2"></div>
+            <div class="col-8">
+              <div class="h1">
+                FAQ
+              </div>
+
             </div>
           </div>
 
