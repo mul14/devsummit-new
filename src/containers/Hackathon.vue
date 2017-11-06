@@ -229,56 +229,6 @@
   </section>
 </template>
 
-<script>
-  export default {
-    name: 'Schedule',
-
-    components: {
-      RundownItem: () => import('./Schedules/RundownItem'),
-    },
-
-    data () {
-      return {
-        currentSchedule: 1,
-
-        firstDay: [
-          {time: '8:00 - 11:00', name: 'Registration Open'},
-          {time: '11:30 - 12:00', name: 'Opening'},
-          {
-            time: '12:00 - 13:00',
-            name: 'Keynote Speaker: Talking about Artificial intelligence',
-            image: require('@/assets/speakers/ariya.jpg'),
-            image_title: 'Ariya Hidayat',
-            image_description: 'Someone',
-          },
-          {time: '14:00 - 15:00', name: 'Panel discussion lima pelaku industri AI'},
-          {time: '16:00 - 17:00', name: 'Keynote speaker 2 tentang Machine Learning'},
-          {time: '17:00', name: 'Closing'},
-        ],
-
-        secondDay: [
-          {time: '8:00 - 11:00', name: 'Registration Open'},
-          {time: '11:30 - 12:00', name: 'Opening'},
-          {time: '12:00', name: 'Keynote Speaker: Talking about Fintech'},
-          {time: '14:00', name: 'Panel discussion tentang regulasi dan industri fintech pada lima stakeholder'},
-          {time: '16:00', name: 'Keynote Speaker: Talking about BlockChain'},
-          {time: '17:00', name: 'Closing'},
-        ],
-
-        thirdDay: [
-          {time: '8:00', name: 'Registration Open'},
-          {time: '11:30', name: 'Opening'},
-          {time: '12:00', name: 'Keynote speaker 1 tentang perjalanan Aryo Hidayat di Silicon Valley'},
-          {time: '14:00', name: 'Panel discussion untuk komunitas dan open source pada lima stakeholder'},
-          {time: '16:00', name: 'Keynote speaker 2 tentang open source mengundang Alexander Makarov'},
-          {time: '17:00', name: 'Closing'},
-        ],
-
-      }
-    },
-  }
-</script>
-
 <style lang="scss" scoped>
   .display-3 {
     padding: 200px 0;
