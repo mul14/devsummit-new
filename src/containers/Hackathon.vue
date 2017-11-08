@@ -65,7 +65,7 @@
                 Teams
               </div>
               <div class="pb-5">
-                Form a team of 2 to 4 developers. You may only join one team. If you would like to participate but do not
+                Form a team of 2 to 3 developers. You may only join one team. If you would like to participate but do not
                 have a team, reach out the committee at DevSummit Hackathon and we will do our best to connect you
                 with others interested in forming a team.
               </div>
