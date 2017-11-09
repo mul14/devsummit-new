@@ -162,32 +162,28 @@
               </thead>
               <tr>
                 <td rowspan="2">21 Nov 2017</td>
-                <td>13:00 <span class="text-muted">WIB</span></td>
+                <td>08:00 <span class="text-muted">WIB</span></td>
                 <td>Check-in opens</td>
               </tr>
               <tr>
-                <td>14:00 <span class="text-muted">WIB</span> - 17:00 <span class="text-muted">WIB</span></td>
+                <td>09:00 <span class="text-muted">WIB</span> - 11:30 <span class="text-muted">WIB</span></td>
                 <td>Introduction and Technical Presentations</td>
               </tr>
               <tr>
-                <td rowspan="6">22 Nov 2017</td>
+                <td rowspan="5">22 Nov 2017</td>
                 <td>08:00 <span class="text-muted">WIB</span></td>
                 <td>Check-in opens</td>
               </tr>
               <tr>
                 <td>09:00 <span class="text-muted">WIB</span></td>
-                <td>Opening</td>
-              </tr>
-              <tr>
-                <td>10:00 <span class="text-muted">WIB</span></td>
-                <td>Begins</td>
-              </tr>
-              <tr>
-                <td>12:00 <span class="text-muted">WIB</span></td>
-                <td>Lunch break</td>
+                <td>Opening, hackathon start</td>
               </tr>
               <tr>
                 <td>13:00 <span class="text-muted">WIB</span></td>
+                <td>Lunch break</td>
+              </tr>
+              <tr>
+                <td>14:00 <span class="text-muted">WIB</span></td>
                 <td>Hack continue</td>
               </tr>
               <tr>
@@ -204,12 +200,20 @@
                 <td>Continue hack</td>
               </tr>
               <tr>
-                <td>10:00 <span class="text-muted">WIB</span></td>
-                <td>Finish</td>
+                <td>10:00 - 11:00 <span class="text-muted">WIB</span></td>
+                <td>Finish, and semi-final judgment</td>
               </tr>
               <tr>
-                <td>10:30 <span class="text-muted">WIB</span></td>
-                <td>Final Presentation and judgement</td>
+                <td>11:30 <span class="text-muted">WIB</span></td>
+                <td>Announcement of team who will give final presentation</td>
+              </tr>
+              <tr>
+                <td>13:00 - 14:00 <span class="text-muted">WIB</span></td>
+                <td>5 team give final presentation</td>
+              </tr>
+              <tr>
+                <td>15:00 - 16:00 <span class="text-muted">WIB</span></td>
+                <td>5 team give final presentation</td>
               </tr>
               <tr>
                 <td>17:00 <span class="text-muted">WIB</span></td>
