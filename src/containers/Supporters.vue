@@ -10,7 +10,9 @@
 
           <div class="row justify-content-center">
             <div class="col-8 col-md-3 mb-5" v-for="sponsor in sponsors">
-              <img :src="sponsor.photo" :alt="sponsor.name" class="img-fluid">
+              <a :href="sponsor.url" target="_blank">
+                <img :src="sponsor.photo" :alt="sponsor.name" class="img-fluid">
+              </a>
             </div>
           </div>
         </div>
@@ -22,7 +24,9 @@
 
           <div class="row justify-content-center">
             <div class="col-8 col-md-2 mb-5" v-for="booth in booths">
-              <img :src="booth.photo" :alt="booth.name" class="img-fluid">
+              <a :href="booth.url" target="_blank">
+                <img :src="booth.photo" :alt="booth.name" class="img-fluid">
+              </a>
             </div>
           </div>
         </div>
@@ -41,7 +45,7 @@
 
           <div class="row justify-content-center">
             <div class="col-8 col-md-2 mb-5" v-for="partner in media_partners">
-              <a :href="partner.website">
+              <a :href="partner.url">
                 <img :src="partner.photo" :alt="partner.name" class="img-fluid">
               </a>
             </div>
@@ -62,7 +66,7 @@
 
           <div class="row justify-content-center">
             <div class="col-8 col-md-2 mb-5" v-for="community in communities">
-              <a :href="community.website">
+              <a :href="community.url">
                 <img :src="community.photo" :alt="community.name" class="img-fluid">
               </a>
             </div>
@@ -153,6 +157,7 @@
           this.sponsors = sponsors.map(sponsor => {
             return {
               name: sponsor.name,
+              url: sponsor.url,
               photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + sponsor.attachment,
             }
           })
@@ -172,6 +177,7 @@
           this.booths = booths.map(booth => {
             return {
               name: booth.name,
+              url: booth.url,
               photo: 'https://img.refactory.id/unsafe/full-fit-in/160x45/center/' + booth.logo_url,
             }
           })
@@ -193,7 +199,7 @@
             .map(partner => {
               return {
                 name: partner.name,
-                website: partner.website,
+                url: partner.website,
                 photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + partner.photo,
               }
             })
@@ -203,7 +209,7 @@
             .map(partner => {
               return {
                 name: partner.name,
-                website: partner.website,
+                url: partner.website,
                 photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + partner.photo,
               }
             })
