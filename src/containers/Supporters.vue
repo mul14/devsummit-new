@@ -1,7 +1,7 @@
 <template>
   <section>
 
-    <div class="bg-light py-1">
+    <div class="bg-white py-1">
       <div class="container">
         <div>
           <div class="mt-5 mb-4">
@@ -9,7 +9,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-8 col-md-4 mb-5" v-for="sponsor in sponsors">
+            <div class="col-8 col-md-3 mb-5" v-for="sponsor in sponsors">
               <img :src="sponsor.photo" :alt="sponsor.name" class="img-fluid">
             </div>
           </div>
@@ -153,7 +153,7 @@
           this.sponsors = sponsors.map(sponsor => {
             return {
               name: sponsor.name,
-              photo: sponsor.attachment,
+              photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + sponsor.attachment,
             }
           })
         }
@@ -172,7 +172,7 @@
           this.booths = booths.map(booth => {
             return {
               name: booth.name,
-              photo: booth.logo_url,
+              photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + booth.logo_url,
             }
           })
         }
@@ -194,7 +194,7 @@
               return {
                 name: partner.name,
                 website: partner.website,
-                photo: partner.photo,
+                photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + partner.photo,
               }
             })
 
@@ -204,7 +204,7 @@
               return {
                 name: partner.name,
                 website: partner.website,
-                photo: partner.photo,
+                photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + partner.photo,
               }
             })
 
