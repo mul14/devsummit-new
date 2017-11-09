@@ -172,7 +172,7 @@
           this.booths = booths.map(booth => {
             return {
               name: booth.name,
-              photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + booth.logo_url,
+              photo: 'https://img.refactory.id/unsafe/full-fit-in/160x45/center/' + booth.logo_url,
             }
           })
         }
