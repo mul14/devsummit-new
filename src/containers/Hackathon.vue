@@ -20,13 +20,16 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-3"></div>
+          <div class="col-12 col-md-12">
+            <BigTitle>What is DevSummit Hackathon</BigTitle>
+          </div>
+          <div class="col-12 col-md-3"></div>
           <div class="col-12 col-md-6">
-            <BigTitle>What is Hackathon</BigTitle>
-            <div class="text-muted">
-              A hackathon (also known as a hack day, hackfest or codefest) is a design sprint-like event in which
-              computer programmers and others involved in software development, including graphic designers,
-              interface designers, project managers, and others, often including subject-matter-experts,
-              collaborate intensively on software projects.
+            <div class="text-muted lead">
+              DevSummit hackathon is a free hackathon competition and part of Indonesia Developer Summit event.
+              Every participants will have access to DevSummit Conference. The competition will utilized
+              <a href="https://mainapi.net" target="_blank">MainAPI.net</a> to build application, library, tools, or
+              SDK.
             </div>
           </div>
         </div>
@@ -35,13 +38,11 @@
 
     <section class="bg-light py-5">
       <div class="container">
+        <BigTitle>Prize</BigTitle>
         <div class="row">
-          <div class="col-12">
-            <div class="">
-              <BigTitle>Prize</BigTitle>
-              <div class="h1">Winner: IDR 10.000.000</div>
-              <div class="h1">Runner up: IDR 7.500.000</div>
-            </div>
+          <div class="col-12 text-center">
+            <div class="h1">Winner: IDR 10.000.000</div>
+            <div class="h1">Runner up: IDR 7.500.000</div>
           </div>
         </div>
       </div>
@@ -57,174 +58,295 @@
             <!--<img :src="require('@/assets/mainapi.net.png')" alt="" class="img-fluid" width="200">-->
             <!--</div>-->
           </div>
+        </div>
 
-          <div>
-            <div class="col-2"></div>
-            <div class="col-8">
-              <div class="h1">
-                Teams
-              </div>
-              <div class="pb-5">
-                Form a team of 2 to 3 developers. You may only join one team. If you would like to participate but do not
-                have a team, reach out the committee at DevSummit Hackathon and we will do our best to connect you
-                with others interested in forming a team.
-              </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="h1">
+              Teams
+            </div>
+            <div class="pb-5">
+              Form a team of 2 to 3 developers. You may only join one team. If you would like to participate but do not
+              have a team, reach out the committee at DevSummit Hackathon and we will do our best to connect you
+              with others interested in forming a team.
             </div>
           </div>
+        </div>
 
-          <div>
-            <div class="col-2"></div>
-            <div class="col-8">
-              <div class="h1">
-                Coding, Design, etc:
-              </div>
-              <div class="pb-5">
-                Your team may begin hacking at 10:00 Wednesday, November 22th at the conclusion of the kick-off event at
-                Sabuga. To ensure all teams start on a level playing ground, no code may be written before
-                this time. All code, design, art, and other work must be created during the hackathon. The only
-                exception to this is material that is freely available to the public. Examples of this include
-                public domain images, creative commons music, open source libraries, etc. Brainstorming and discussing
-                ideas with your team are allowed and encouraged before the event so you can dive right into coding
-                when the event begins.
-              </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="h1">
+              Coding, Design, etc:
+            </div>
+            <div class="pb-5">
+              Your team may begin hacking at 10:00 Wednesday, November 22th at the conclusion of the kick-off event at
+              Sabuga. To ensure all teams start on a level playing ground, no code may be written before
+              this time. All code, design, art, and other work must be created during the hackathon. The only
+              exception to this is material that is freely available to the public. Examples of this include
+              public domain images, creative commons music, open source libraries, etc. Brainstorming and discussing
+              ideas with your team are allowed and encouraged before the event so you can dive right into coding
+              when the event begins.
             </div>
           </div>
+        </div>
 
-          <div>
-            <div class="col-2"></div>
-            <div class="col-8">
-              <div class="h1">
-                APIs, Services, Open Source:
-              </div>
-              <div class="pb-5">
-                You are encouraged to use 3rd party services, APIs, open source projects, libraries, and frameworks.
-                We are working with limited time here, and there’s no reason to recreate the wheel. Data utilized in
-                your application should be from freely available open datasets. Judges will give special consideration
-                to applications that utilize local datasets unveiled at the conclusion of the Thursday night social
-                event and posted here at 8:00pm Thursday, November 6th. Your application must be open source. We want to
-                work with you and others after the hackathon ends to provide your great ideas to the community.
-                To assist us with this, code must be made available on a public Github repository and a link submitted
-                to the CIVICON15 Github page by 1:00pm on Sunday, November 8th in preparation for judging. Any commits
-                added to your project’s codebase after the deadline will not be considered during final judging.
-              </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="h1">
+              APIs, Services, Open Source:
+            </div>
+            <div class="pb-5">
+              You are encouraged to use 3rd party services, APIs, open source projects, libraries, and frameworks.
+              We are working with limited time here, and there’s no reason to recreate the wheel. Data utilized in
+              your application should be from freely available open datasets. Judges will give special consideration
+              to applications, SDK, or tools that utilize <a href="https://mainapi.net" target="_blank">MainAPI.net</a>
+              unveiled at 8:00pm Thursday, November 23th. Your application must be open source. We want to
+              work with you and others after the hackathon ends to provide your great ideas to the community.
+              To assist us with this, code must be made available on a public Github repository and a link submitted
+              to a URL that we will give at the end of hackathon page by 10:00 WIB on Sunday, November 23th in
+              preparation for judging. Any commits added to your project’s codebase after the deadline will not be
+              considered during final judging.
             </div>
           </div>
+        </div>
 
 
-          <div>
-            <div class="col-2"></div>
-            <div class="col-8">
-              <div class="h1">
-                Judges
-              </div>
-              <div>
-                Judges will be looking for teams to demonstrate the following three criteria:
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="h1">
+              Judges
+            </div>
+            <div>
+              Judges will be looking for teams to demonstrate the following three criteria:
 
-                <ul>
-                  <li>
-                    <strong>Build Something</strong> - It’s a hackathon after all! Have a working demo running to
-                    present to the judges at the end of the competition. It doesn’t need to be finely tuned and
-                    polished with all your intended features to remain in the running.
-                  </li>
-                  <li>
-                    <strong>Innovate</strong> - How creative is your approach to the problem you are trying to solve?
-                    Is your solution to the problem original or novel?
-                  </li>
-                  <li></li>
-                </ul>
-              </div>
+              <ul>
+                <li>
+                  <strong>Build Something</strong> - It’s a hackathon after all! Have a working demo running to
+                  present to the judges at the end of the competition. It doesn’t need to be finely tuned and
+                  polished with all your intended features to remain in the running.
+                </li>
+                <li>
+                  <strong>Innovate</strong> - How creative is your approach to the problem you are trying to solve?
+                  Is your solution to the problem original or novel?
+                </li>
+                <li>
+                  <strong>Be a Solution</strong> -
+                  Your hack project must be a solution and solve a problem.
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
 
-          <div>
-            <div class="col-2"></div>
-            <div class="col-8">
-              <div class="h1">
-                How to Register
-              </div>
+      </div>
+    </section>
 
-            </div>
-          </div>
+    <section class="bg-white pt-1 pb-5">
+      <div class="container">
+        <div class="row mt-5">
 
-          <div>
-            <div class="col-2"></div>
-            <div class="col-8">
-              <div class="h1">
-                FAQ
-              </div>
+          <div class="col-12">
+            <BigTitle>Schedule</BigTitle>
 
-            </div>
+            <table class="table table-bordered">
+              <thead>
+              <tr>
+                <th width="20%">Date</th>
+                <th width="20%">Time</th>
+                <th width="60%">Activity</th>
+              </tr>
+              </thead>
+              <tr>
+                <td rowspan="2">21 Nov 2017</td>
+                <td>13:00 <span class="text-muted">WIB</span></td>
+                <td>Check-in opens</td>
+              </tr>
+              <tr>
+                <td>14:00 <span class="text-muted">WIB</span> - 17:00 <span class="text-muted">WIB</span></td>
+                <td>Introduction and Technical Presentations</td>
+              </tr>
+              <tr>
+                <td rowspan="6">22 Nov 2017</td>
+                <td>08:00 <span class="text-muted">WIB</span></td>
+                <td>Check-in opens</td>
+              </tr>
+              <tr>
+                <td>09:00 <span class="text-muted">WIB</span></td>
+                <td>Opening</td>
+              </tr>
+              <tr>
+                <td>10:00 <span class="text-muted">WIB</span></td>
+                <td>Begins</td>
+              </tr>
+              <tr>
+                <td>12:00 <span class="text-muted">WIB</span></td>
+                <td>Lunch break</td>
+              </tr>
+              <tr>
+                <td>13:00 <span class="text-muted">WIB</span></td>
+                <td>Hack continue</td>
+              </tr>
+              <tr>
+                <td>18:00 <span class="text-muted">WIB</span></td>
+                <td>Dinner break, and continue to hack.</td>
+              </tr>
+              <tr>
+                <td rowspan="10">23 Nov 2017</td>
+                <td>07:00 <span class="text-muted">WIB</span></td>
+                <td>Breakfast</td>
+              </tr>
+              <tr>
+                <td>08:00 <span class="text-muted">WIB</span></td>
+                <td>Continue hack</td>
+              </tr>
+              <tr>
+                <td>10:00 <span class="text-muted">WIB</span></td>
+                <td>Finish</td>
+              </tr>
+              <tr>
+                <td>10:30 <span class="text-muted">WIB</span></td>
+                <td>Final Presentation and judgement</td>
+              </tr>
+              <tr>
+                <td>17:00 <span class="text-muted">WIB</span></td>
+                <td>Awards and closing</td>
+              </tr>
+            </table>
           </div>
 
         </div>
       </div>
+
     </section>
 
-    <!--<section class="bg-white pt-1 pb-5">-->
-    <!--<div class="container">-->
-    <!--<div class="row mt-5">-->
+    <section class="bg-light py-5">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
 
-    <!--<div class="col-12">-->
-    <!--<BigTitle>Schedule</BigTitle>-->
+          <BigTitle>How to Register?</BigTitle>
 
-    <!--<table class="table table-bordered">-->
-    <!--<thead>-->
-    <!--<tr>-->
-    <!--<th width="20%">Date</th>-->
-    <!--<th width="20%">Time</th>-->
-    <!--<th width="60%">Activity</th>-->
-    <!--</tr>-->
-    <!--</thead>-->
-    <!--<tr>-->
-    <!--<td rowspan="2">21 Nov 2017</td>-->
-    <!--<td>13:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Check-in opens</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td>14:00 <span class="text-muted">WIB</span> - 17:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Introduction and Technical Presentations</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td rowspan="6">22 Nov 2017</td>-->
-    <!--<td>08:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Check-in opens</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td>09:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Opening</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td>10:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Begins</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td>12:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Lunch break</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td>13:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Hack continue</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td>18:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Dinner break, and continue to hack.</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td rowspan="6">23 Nov 2017</td>-->
-    <!--<td>07:00 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Breakfast</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td>10:30 <span class="text-muted">WIB</span></td>-->
-    <!--<td>Final Presentation + Awards</td>-->
-    <!--</tr>-->
-    <!--</table>-->
-    <!--</div>-->
+          <div class="row mb-5">
+            <div class="col-4">
+              <div class="bg-white">
+                <a :href="require('@/assets/hackathon-register-01.jpg')" target="_blank">
+                  <img :src="require('@/assets/hackathon-register-01.jpg')" alt="Hackathon registration"
+                       class="img-fluid">
+                </a>
+                <div class="p-3 bg-light">
+                  <p>
+                    You need to register via DevSummit mobile app. It's available for
+                    <a href="https://play.google.com/store/apps/details?id=io.devsummit.app.android">Android</a>
+                    and
+                    <a href="https://itunes.apple.com/id/app/indonesia-developer-summit/id1287587345">iOS</a>
+                  </p>
 
-    <!--</div>-->
-    <!--</div>-->
+                  <p>Go to the Ticket section, then tap the plus (+) button.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bg-light">
+                <a :href="require('@/assets/hackathon-register-02.jpg')" target="_blank">
+                  <img :src="require('@/assets/hackathon-register-02.jpg')" alt="Hackathon registration"
+                       class="img-fluid">
+                </a>
+                <div class="p-3 bg-light">
+                  <p>Tap the "Register Hackathon" button.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bg-light">
+                <a :href="require('@/assets/hackathon-register-03.jpg')" target="_blank">
+                  <img :src="require('@/assets/hackathon-register-03.jpg')" alt="Hackathon registration"
+                       class="img-fluid">
+                </a>
+                <div class="p-3 bg-light">
+                  <p>Enter your GitHub username or URL, then tap Register button.</p>
+                  <p>Please check your email after successful registration.</p>
+                </div>
+              </div>
+            </div>
 
-    <!--</section>-->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-white py-5">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+
+          <BigTitle>FAQ</BigTitle>
+
+          <dl>
+            <dd class="mt-4">
+              <strong>How to register?</strong><br>
+              Please read the instruction on the "How to Register" section.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>Can I join the hackathon without team?</strong><br>
+              No, we don't allowed individual participant. If you don't have a team, you can join with other team on
+              location.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>Is it free?</strong><br>
+              Yes, but we will take Rp 150.000 as commitment fee. And we will return it to you after hackathon over.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>What preparation that I will need to join hackathon?</strong><br>
+              You need to borrow your own laptop and any personal stuff you need such as medicine.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>Is internet connection provided?</strong><br>
+              Yes, we will provide internet connection. But, just in case of the unexpected,
+              We suggest you to bring your own personal internet connection.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>Will we get food?</strong><br>
+              Yes, we provide food for lunch, dinner, and breakfast (check the schedule).
+              We also provide coffee, tea and water.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>May I come with more than 3 people in a team?</strong><br>
+              No, the member of team at least 2 people and maximum 3 people.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>When is the team formation decided?</strong><br>
+              At first day.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>What kind of project that I can build?</strong><br>
+              Almost anything. Application, tools, library, or SDK are allowed.
+              But it must utilize <a href="https://mainapi.net">MainAPI.net</a>.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>I still have questions</strong><br>
+              If you still have other questions related to DevSummit hackathon, please send messages via
+              <a href="https://api.whatsapp.com/send?phone=6285228402005">WhatsApp Messenger</a>.
+            </dd>
+
+          </dl>
+
+        </div>
+      </div>
+    </section>
 
   </section>
 </template>
@@ -244,10 +366,10 @@
   }
 
   a {
-    background: white;
-    display: block;
-    cursor: pointer;
-    border-top: 5px solid transparent;
+    /*background: white;*/
+    /*display: block;*/
+    /*cursor: pointer;*/
+    /*border-top: 5px solid transparent;*/
   }
 
   .active {
