@@ -9,6 +9,7 @@
           <dd>
             <router-link :to="{ name: 'Home'}" class="d-block">Home</router-link>
           </dd>
+          <dd><router-link :to="{ name: 'Hackathon'}">Hackathon</router-link></dd>
           <dd>
             <router-link :to="{ name: 'VenueMap'}" class="d-block">Venue Map</router-link>
           </dd>
@@ -54,14 +55,15 @@
               <!--</div>-->
             <!--</a>-->
 
-            <a href="#" class="menu-submenu">
-              Agenda
-              <div class="submenu">
+              <router-link :to="{ name: 'Hackathon'}">Hackathon</router-link>
+            <!--<a href="#" class="menu-submenu">-->
+              <!--Agenda-->
+              <!--<div class="submenu">-->
                 <!--<router-link :to="{ name: 'ScheduleConference'}">Conference Schedule</router-link>-->
-                <router-link :to="{ name: 'Hackathon'}">Hackathon</router-link>
+
                 <!--<router-link :to="{ name: 'ScheduleSpeedDating'}">Speed Dating</router-link>-->
-              </div>
-            </a>
+              <!--</div>-->
+            <!--</a>-->
 
               <a href="#" class="menu-submenu">
                 Venue
