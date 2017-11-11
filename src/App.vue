@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div id="app">
 
     <Menus/>
 
-    <section id="app">
+    <section>
 
       <transition name="slideup">
         <router-view/>

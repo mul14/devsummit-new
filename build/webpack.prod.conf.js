@@ -9,7 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
 const env = config.build.env
 
 const webpackConfig = merge(baseWebpackConfig, {
@@ -95,7 +95,15 @@ const webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+
+    new PrerenderSpaPlugin(
+      // Absolute path to compiled SPA
+      path.join(__dirname, '../dist'),
+      // List of routes to prerender
+      ['/', '/hackathon', '/venue', '/accommodation', '/code_of_conduct']
+    ),
+
   ]
 })
 

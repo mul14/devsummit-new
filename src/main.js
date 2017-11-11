@@ -17,9 +17,12 @@ router.afterEach((to, from) => {
 })
 
 /* eslint-disable no-new */
-new Vue({
-  el: '#app',
+const root = new Vue({
   router,
   store,
   render: h => h(App),
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  root.$mount('#app')
 })
