@@ -9,7 +9,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-8 col-md-3 mb-5" v-for="sponsor in sponsors">
+            <div class="col-8 col-md-3 mb-5" v-for="sponsor in sponsors" :key="sponsor.id">
               <a :href="sponsor.url" target="_blank">
                 <img :src="sponsor.photo" :alt="sponsor.name" class="img-fluid">
               </a>
@@ -23,7 +23,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-8 col-md-2 mb-5" v-for="booth in booths">
+            <div class="col-8 col-md-2 mb-5" v-for="booth in booths" :key="booth.id">
               <a :href="booth.url" target="_blank">
                 <img :src="booth.photo" :alt="booth.name" class="img-fluid">
               </a>
@@ -44,7 +44,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-8 col-md-2 mb-5" v-for="partner in media_partners">
+            <div class="col-8 col-md-2 mb-5" v-for="partner in media_partners" :key="partner.id">
               <a :href="partner.url">
                 <img :src="partner.photo" :alt="partner.name" class="img-fluid">
               </a>
@@ -65,7 +65,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-8 col-md-2 mb-5" v-for="community in communities">
+            <div class="col-8 col-md-2 mb-5" v-for="community in communities" :key="community.id">
               <a :href="community.url">
                 <img :src="community.photo" :alt="community.name" class="img-fluid">
               </a>
