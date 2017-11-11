@@ -1,7 +1,7 @@
 <template>
   <section>
 
-    <div class="bg-white py-1">
+    <div class="bg-light py-1">
       <div class="container">
         <div>
           <div class="mt-5 mb-4">
@@ -158,7 +158,7 @@
             return {
               name: sponsor.name,
               url: sponsor.url,
-              photo: 'https://img.refactory.id/unsafe/full-fit-in/170x60/center/' + sponsor.attachment,
+              photo: 'https://img.refactory.id/unsafe/full-fit-in/2800x80/center/' + sponsor.attachment,
             }
           })
         }
