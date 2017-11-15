@@ -9,7 +9,7 @@
           <dd>
             <router-link :to="{ name: 'Home'}" class="d-block">Home</router-link>
           </dd>
-          <dd><router-link :to="{ name: 'Hackathon'}">Hackathon</router-link></dd>
+          <dd><router-link :to="{ name: 'Hackathon'}" class="d-block">Hackathon</router-link></dd>
           <dd>
             <router-link :to="{ name: 'VenueMap'}" class="d-block">Venue Map</router-link>
           </dd>
