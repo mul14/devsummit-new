@@ -60,6 +60,17 @@
           </div>
         </div>
 
+        <div class="row mb-5">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <div class="text-center">
+              <a href="https://form.jotform.me/73183274211450" class="btn btn-lg btn-block btn-warning" style="padding: 20px;">
+                Click here to Register!
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-2"></div>
           <div class="col-8">
@@ -171,11 +182,11 @@
               </tr>
               <tr>
                 <td rowspan="5">22 Nov 2017</td>
-                <td>08:00 <span class="text-muted">WIB</span></td>
+                <td>07:00 <span class="text-muted">WIB</span></td>
                 <td>Check-in opens</td>
               </tr>
               <tr>
-                <td>09:00 <span class="text-muted">WIB</span></td>
+                <td>08:00 <span class="text-muted">WIB</span></td>
                 <td>Opening, hackathon start</td>
               </tr>
               <tr>
@@ -196,28 +207,8 @@
                 <td>Breakfast</td>
               </tr>
               <tr>
-                <td>08:00 <span class="text-muted">WIB</span></td>
-                <td>Continue hack</td>
-              </tr>
-              <tr>
-                <td>10:00 - 11:00 <span class="text-muted">WIB</span></td>
-                <td>Finish, and semi-final judgment</td>
-              </tr>
-              <tr>
-                <td>11:30 <span class="text-muted">WIB</span></td>
-                <td>Announcement of team who will give final presentation</td>
-              </tr>
-              <tr>
-                <td>13:00 - 14:00 <span class="text-muted">WIB</span></td>
-                <td>5 team give final presentation</td>
-              </tr>
-              <tr>
-                <td>15:00 - 16:00 <span class="text-muted">WIB</span></td>
-                <td>5 team give final presentation</td>
-              </tr>
-              <tr>
-                <td>17:00 <span class="text-muted">WIB</span></td>
-                <td>Awards and closing</td>
+                <td>08:00 - 11:30 <span class="text-muted">WIB</span></td>
+                <td>Presentation, judging, and awards</td>
               </tr>
             </table>
           </div>
@@ -227,14 +218,13 @@
 
     </section>
 
-    <section class="bg-light py-5">
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
+    <!-- <section class="bg-light py-5"> -->
+      <!-- <div class="row"> -->
+        <!-- <div class="col-2"></div> -->
+        <!-- <div class="col-8"> -->
+          <!-- <BigTitle>How to Register?</BigTitle> -->
 
-          <BigTitle>How to Register?</BigTitle>
-
-          <div class="row mb-5">
+          <!-- <div class="row mb-5">
             <div class="col-4">
               <div class="bg-white">
                 <a :href="require('@/assets/hackathon-register-01.jpg')" target="_blank">
@@ -277,11 +267,11 @@
               </div>
             </div>
 
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
 
-      </div>
-    </section>
+      <!-- </div> -->
+    <!-- </section> -->
 
     <section class="bg-white py-5">
       <div class="row">
@@ -293,18 +283,31 @@
           <dl>
             <dd class="mt-4">
               <strong>How to register?</strong><br>
-              Please read the instruction on the "How to Register" section.
+              Click this <a href="https://form.jotform.me/73183274211450">register</a> button.
             </dd>
 
             <dd class="mt-4">
               <strong>Can I join the hackathon without team?</strong><br>
-              No, we don't allowed individual participant. If you don't have a team, you can join with other team on
-              location.
+              No, we don't allowed individual participant.
+              If you don't have a team, you can join with other team on location.
             </dd>
 
             <dd class="mt-4">
               <strong>Is it free?</strong><br>
-              Yes, but we will take Rp 150.000 as commitment fee. And we will return it to you after hackathon over.
+              Yes, but we will take Rp 150.000 as commitment fee.
+              And we will return it to you after hackathon over.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>Is all of member team need to register?</strong><br>
+              Yes, all of your member team need to register individually,
+              and each member must transfer commitment fee.
+            </dd>
+
+            <dd class="mt-4">
+              <strong>Can I cancel my participation?</strong><br>
+              Yes, you can cancel it, and we will give your seat to the others.
+              But your commitment fee will not returned.
             </dd>
 
             <dd class="mt-4">
@@ -348,6 +351,19 @@
 
           </dl>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <div class="text-center">
+            <a href="https://form.jotform.me/73183274211450" class="btn btn-lg btn-block btn-warning" style="padding: 20px;">
+              Click here to Register!
+            </a>
+          </div>
         </div>
       </div>
     </section>
