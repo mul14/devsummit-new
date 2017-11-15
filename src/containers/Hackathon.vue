@@ -61,8 +61,8 @@
         </div>
 
         <div class="row mb-5">
-          <div class="col-4"></div>
-          <div class="col-4">
+          <div class="col-1 col-md-4"></div>
+          <div class="col-10 col-md-4">
             <div class="text-center">
               <a href="https://form.jotform.me/73183274211450" class="btn btn-lg btn-block btn-warning" style="padding: 20px;">
                 Click here to Register!
@@ -357,8 +357,8 @@
 
     <section class="bg-light py-5">
       <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
+        <div class="col-1 col-md-4"></div>
+        <div class="col-10 col-md-4">
           <div class="text-center">
             <a href="https://form.jotform.me/73183274211450" class="btn btn-lg btn-block btn-warning" style="padding: 20px;">
               Click here to Register!
