@@ -294,20 +294,20 @@
 
             <dd class="mt-4">
               <strong>Is it free?</strong><br>
-              Yes, but we will take Rp 150.000 as commitment fee.
-              And we will return it to you after hackathon over.
+              Yes, <strike class="text-muted">but we will take Rp 150.000 as commitment fee.
+              And we will return it to you after hackathon over.</strike>
             </dd>
 
             <dd class="mt-4">
               <strong>Is all of member team need to register?</strong><br>
               Yes, all of your member team need to register individually,
-              and each member must transfer commitment fee.
+              <strike class="text-muted">and each member must transfer commitment fee</strike>.
             </dd>
 
             <dd class="mt-4">
               <strong>Can I cancel my participation?</strong><br>
-              Yes, you can cancel it, and we will give your seat to the others.
-              But your commitment fee will not returned.
+              Yes, you can cancel it by <a href="https://form.jotform.me/73191181211446">fill this form</a>.
+              Then we will give your seat to the others.
             </dd>
 
             <dd class="mt-4">
