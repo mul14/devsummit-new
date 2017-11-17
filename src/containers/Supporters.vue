@@ -23,11 +23,13 @@
           </div>
 
           <div class="row justify-content-center">
-            <span class="mx-2 mb-5" v-for="booth in booths" :key="booth.id">
-              <a :href="booth.url" target="_blank">
-                <img :src="booth.photo" :alt="booth.name" width="100">
-              </a>
-            </span>
+            <div class="col-md-7 mb-5">
+              <span class="m-2 d-inline-block" v-for="booth in booths" :key="booth.id">
+                <a :href="booth.url" target="_blank">
+                  <img :src="booth.photo" :alt="booth.name" width="100">
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
