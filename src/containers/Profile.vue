@@ -2,7 +2,7 @@
   <section>
     <div class="container py-5">
 
-      <BigTitle>Speakers</BigTitle>
+      <BigTitle>Keynote Speakers</BigTitle>
 
       <div v-for="speaker in speakers" :key="speaker.name" class="row pb-5 d-flex align-items-lg-center">
 
@@ -28,6 +28,24 @@
       </div>
 
     </div>
+
+    <div class="container py-5">
+      <BigTitle>Panel Discussion Speakers</BigTitle>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <span v-for="panel in panels" :key="panel.name" class="col-12 col-md-3 col-lg-2">
+          <img :src="panel.image" class="img-fluid">
+          <div class="my-2 text-center">
+            <div style="font-size: 1.1rem; color: #333; font-family: Georgia, Times;"> {{ panel.name }} </div>
+            <small style="color: #999;"> {{ panel.title }} </small>
+          </div>
+        </span>
+      </div>
+    </div>
+
+
+
   </section>
 </template>
 
@@ -65,40 +83,40 @@
           {
             name: 'Imanzah Nurhidayat',
             image: require('@/assets/speakers/imanzah.jpg'),
-            title: 'CIO Corechain',
+            title: 'CIO of Corechain',
             description: 'Running Digital Economy on Blockchain',
           },
         ],
-        others: [
+        panels: [
           {
-            name: '???',
-            description: '???',
-            title: '',
-            image: 'https://i.pinimg.com/736x/11/26/06/112606b29bbd824e637d395d55782932--man-candy-beautiful-people.jpg',
+            name: 'Ken Ratri Iswari',
+            image: require('@/assets/speakers/kenratri.jpg'),
+            title: 'CEO Geekhunter',
+            description: '',
           },
           {
-            name: '???',
-            description: '???',
-            title: '',
-            image: 'https://i.pinimg.com/736x/45/5e/a8/455ea87e1d00c62e9e16a29ac8aa7a4b--hotels-for-dogs-emma-roberts.jpg',
+            name: 'Peter Jack Kambey',
+            image: require('@/assets/speakers/pjk.jpg'),
+            title: 'PHP Indonesia',
+            description: '',
           },
           {
-            name: '???',
-            description: '???',
-            title: '',
-            image: 'https://www.american.edu/uploads/profiles/large/Hannah_Debelius_045arw-small_2.JPG',
+            name: 'Evan Purnama',
+            image: require('@/assets/speakers/evan.jpg'),
+            title: 'CTO of Qiscus',
+            description: '',
           },
           {
-            name: '???',
-            description: '???',
-            title: '',
-            image: 'http://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg',
+            name: 'Teguh Hardiansah',
+            image: require('@/assets/speakers/teguh.jpg'),
+            title: 'Corechain',
+            description: '',
           },
           {
-            name: '???',
-            description: '???',
-            title: '',
-            image: 'https://www.scheller.gatech.edu/thumb/width/600/cropratio/1:1/pix/directory/bryant_scott_profile.jpg',
+            name: 'Ade Syah Lubis',
+            image: require('@/assets/speakers/ade.jpg'),
+            title: 'CEO NiagaHoster',
+            description: '',
           },
         ],
       }
