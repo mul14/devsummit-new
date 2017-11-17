@@ -168,13 +168,15 @@
               <tr>
                 <th width="20%">Date</th>
                 <th width="20%">Time</th>
-                <th width="60%">Activity</th>
+                <th width="40%">Activity</th>
+                <th width="40%">Location</th>
               </tr>
               </thead>
               <tr>
                 <td rowspan="2">21 Nov 2017</td>
                 <td>08:00 <span class="text-muted">WIB</span></td>
                 <td>Check-in opens</td>
+                <td rowspan="4">Hackathon room</td>
               </tr>
               <tr>
                 <td>09:00 <span class="text-muted">WIB</span> - 11:30 <span class="text-muted">WIB</span></td>
@@ -182,20 +184,22 @@
               </tr>
               <tr>
                 <td rowspan="5">22 Nov 2017</td>
-                <td>07:00 <span class="text-muted">WIB</span></td>
+                <td>08:00 <span class="text-muted">WIB</span></td>
                 <td>Check-in opens</td>
               </tr>
               <tr>
-                <td>08:00 <span class="text-muted">WIB</span></td>
+                <td>09:00 <span class="text-muted">WIB</span></td>
                 <td>Opening, hackathon start</td>
               </tr>
               <tr>
                 <td>13:00 <span class="text-muted">WIB</span></td>
                 <td>Lunch break</td>
+                <td>Rooftop Garden</td>
               </tr>
               <tr>
                 <td>14:00 <span class="text-muted">WIB</span></td>
                 <td>Hack continue</td>
+                <td rowspan="4">Hackathon room</td>
               </tr>
               <tr>
                 <td>18:00 <span class="text-muted">WIB</span></td>
@@ -207,8 +211,13 @@
                 <td>Breakfast</td>
               </tr>
               <tr>
-                <td>08:00 - 11:30 <span class="text-muted">WIB</span></td>
-                <td>Presentation, judging, and awards</td>
+                <td>09:00 - 11:30 <span class="text-muted">WIB</span></td>
+                <td>Presentation and judging</td>
+              </tr>
+              <tr>
+                <td>17:00 <span class="text-muted">WIB</span></td>
+                <td>Awards</td>
+                <td>Main stage</td>
               </tr>
             </table>
           </div>
