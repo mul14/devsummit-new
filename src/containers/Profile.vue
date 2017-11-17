@@ -56,6 +56,12 @@
             title: 'Founder of Lauretta.io',
             description: 'Expert Systems: Transfer Learning and it\'s Impact on Your Next Big Project',
           },
+          {
+            name: 'Johanes Alexander',
+            image: require('@/assets/speakers/johanes.jpg'),
+            title: 'Lead Solutions Architect, Business Intelligence',
+            description: '',
+          },
         ],
         others: [
           {
