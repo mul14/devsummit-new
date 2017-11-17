@@ -4,7 +4,7 @@
 
       <BigTitle>Speakers</BigTitle>
 
-      <div v-for="speaker in speakers" class="row pb-5 d-flex align-items-lg-center">
+      <div v-for="speaker in speakers" :key="speaker.name" class="row pb-5 d-flex align-items-lg-center">
 
         <div class="col-12 col-lg-2"></div>
         <div class="col-12 col-lg-4 text-center">
@@ -60,7 +60,13 @@
             name: 'Johanes Alexander',
             image: require('@/assets/speakers/johanes.jpg'),
             title: 'Lead Solutions Architect, Business Intelligence',
-            description: '',
+            description: 'How GO-JEK Transform (Big) Data into Business Decisions',
+          },
+          {
+            name: 'Imanzah Nurhidayat',
+            image: require('@/assets/speakers/imanzah.jpg'),
+            title: 'CIO Corechain',
+            description: 'Running Digital Economy on Blockchain',
           },
         ],
         others: [
