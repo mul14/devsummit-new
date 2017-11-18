@@ -101,9 +101,9 @@
             description: '',
           },
           {
-            name: 'Evan Purnama',
-            image: require('@/assets/speakers/evan.jpg'),
-            title: 'CTO of Qiscus',
+            name: 'Muhamad Saad Nurul Ishlah',
+            image: require('@/assets/speakers/saad.jpg'),
+            title: 'AI & Bot Specialist Qiscus',
             description: '',
           },
           {
