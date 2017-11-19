@@ -29,18 +29,35 @@
 
     </div>
 
-    <div class="container py-5">
-      <BigTitle>Panel Discussion Speakers</BigTitle>
 
-      <div class="row">
-        <div class="col-md-1"></div>
-        <span v-for="panel in panels" :key="panel.name" class="col-12 col-md-3 col-lg-2">
-          <img :src="panel.image" class="img-fluid">
+    <div class="container py-5">
+      <BigTitle>BlockChain Workshop</BigTitle>
+      <div class="text-center">
+        <span v-for="workshop in workshops" :key="workshop.name">
+          <img :src="workshop.image" class="img-fluid">
           <div class="my-2 text-center">
-            <div style="font-size: 1.1rem; color: #333; font-family: Georgia, Times;"> {{ panel.name }} </div>
-            <small style="color: #999;"> {{ panel.title }} </small>
+            <div style="font-size: 2rem; color: #333; font-family: Georgia, Times;"> {{ workshop.name }} </div>
+            <div class="lead" style="color: #999;"> {{ workshop.title }} </div>
           </div>
         </span>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <BigTitle>Other Speakers</BigTitle>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <span v-for="panel in panels" :key="panel.name" class="my-3 col-6 col-lg-2">
+              <img :src="panel.image" class="img-fluid">
+              <div class="my-2 text-center">
+                <div style="font-size: 1.1rem; color: #333; font-family: Georgia, Times;"> {{ panel.name }} </div>
+                <small style="color: #999;"> {{ panel.title }} </small>
+              </div>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -87,6 +104,14 @@
             description: 'Running Digital Economy on Blockchain',
           },
         ],
+        workshops: [
+          {
+            name: 'Teguh Hardiansah',
+            image: require('@/assets/speakers/teguh.jpg'),
+            title: 'Corechain',
+            description: '',
+          },
+        ],
         panels: [
           {
             name: 'Ken Ratri Iswari',
@@ -107,15 +132,21 @@
             description: '',
           },
           {
-            name: 'Teguh Hardiansah',
-            image: require('@/assets/speakers/teguh.jpg'),
-            title: 'Corechain',
-            description: '',
-          },
-          {
             name: 'Ade Syah Lubis',
             image: require('@/assets/speakers/ade.jpg'),
             title: 'CEO NiagaHoster',
+            description: '',
+          },
+          {
+            name: 'Ahmad Anshori Muslim',
+            image: require('@/assets/speakers/anshori.jpg'),
+            title: 'eFishery',
+            description: '',
+          },
+          {
+            name: 'Andri Diki',
+            image: require('@/assets/speakers/andri.jpg'),
+            title: 'Jennifer Soft',
             description: '',
           },
         ],
