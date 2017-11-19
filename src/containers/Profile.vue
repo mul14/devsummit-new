@@ -53,7 +53,7 @@
               <img :src="panel.image" class="img-fluid">
               <div class="my-2 text-center">
                 <div style="font-size: 1.1rem; color: #333; font-family: Georgia, Times;"> {{ panel.name }} </div>
-                <small style="color: #999;"> {{ panel.title }} </small>
+                <small style="color: #999; font-size: 0.9rem;"> {{ panel.title }} </small>
               </div>
             </span>
           </div>
@@ -114,6 +114,18 @@
         ],
         panels: [
           {
+            name: 'Andri Diki',
+            image: require('@/assets/speakers/andri.jpg'),
+            title: 'Jennifer Soft',
+            description: '',
+          },
+          {
+            name: 'Ahmad Anshori Muslim',
+            image: require('@/assets/speakers/anshori.jpg'),
+            title: 'eFishery',
+            description: '',
+          },
+          {
             name: 'Ken Ratri Iswari',
             image: require('@/assets/speakers/kenratri.jpg'),
             title: 'CEO Geekhunter',
@@ -135,18 +147,6 @@
             name: 'Ade Syah Lubis',
             image: require('@/assets/speakers/ade.jpg'),
             title: 'CEO NiagaHoster',
-            description: '',
-          },
-          {
-            name: 'Ahmad Anshori Muslim',
-            image: require('@/assets/speakers/anshori.jpg'),
-            title: 'eFishery',
-            description: '',
-          },
-          {
-            name: 'Andri Diki',
-            image: require('@/assets/speakers/andri.jpg'),
-            title: 'Jennifer Soft',
             description: '',
           },
         ],
