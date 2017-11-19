@@ -120,6 +120,12 @@
             description: '',
           },
           {
+            name: 'Ade Syah Lubis',
+            image: require('@/assets/speakers/ade.jpg'),
+            title: 'CEO NiagaHoster',
+            description: '',
+          },
+          {
             name: 'Ahmad Anshori Muslim',
             image: require('@/assets/speakers/anshori.jpg'),
             title: 'eFishery',
@@ -142,13 +148,7 @@
             image: require('@/assets/speakers/saad.jpg'),
             title: 'AI & Bot Specialist Qiscus',
             description: '',
-          },
-          {
-            name: 'Ade Syah Lubis',
-            image: require('@/assets/speakers/ade.jpg'),
-            title: 'CEO NiagaHoster',
-            description: '',
-          },
+          }
         ],
       }
     },
