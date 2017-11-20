@@ -23,7 +23,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-md-8 mb-5">
+            <div class="col-md-9 mb-5">
               <span class="m-2 d-inline-block" v-for="booth in booths" :key="booth.id">
                 <a :href="booth.url" target="_blank">
                   <img :src="booth.photo" :alt="booth.name" width="100">
